@@ -868,3 +868,8 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #4ba500;
 }
+
+#services p.text-muted {
+    text-align: left;
+    text-indent: 25px;
+}
