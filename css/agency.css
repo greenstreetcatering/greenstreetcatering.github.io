@@ -261,6 +261,19 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+
+
+    div.navbar-header.page-scroll > a > img {
+        display:none;
+    }
+    .navbar-shrink div.navbar-header.page-scroll > a > img.header-logo {
+        display:block;
+        max-height: 30px
+    }
+
+    #page-top > nav > div > div.navbar-header.page-scroll > a {
+        padding-top: 10px;
+    }
 }
 
 
@@ -301,7 +314,7 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 200px;
         padding-bottom: 200px;
     }
 
