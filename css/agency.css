@@ -191,6 +191,13 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #e5a51b;
 }
+div.navbar-header.page-scroll > a > img {
+  display: none;
+}
+.navbar-shrink div.navbar-header.page-scroll > a > img.header-logo {
+  display: block;
+  max-height: 15px;
+}
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
@@ -215,9 +222,6 @@ fieldset[disabled] .btn-xl.active {
   }
   .navbar-default.navbar-shrink .navbar-brand {
     font-size: 1.5em;
-  }
-  div.navbar-header.page-scroll > a > img {
-    display: none;
   }
   .navbar-shrink div.navbar-header.page-scroll > a > img.header-logo {
     display: block;
