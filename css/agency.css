@@ -811,4 +811,7 @@ img.translucent-less {
 .hvr-grow:active {
   transform: scale(1.1);
 }
+.carousel .carousel-inner .item img {
+  margin-bottom: 0px;
+}
 /*# sourceMappingURL=agency.css.map */
