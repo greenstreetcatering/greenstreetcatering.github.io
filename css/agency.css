@@ -230,6 +230,11 @@ div.navbar-header.page-scroll > a > img {
   #page-top > nav > div > div.navbar-header.page-scroll > a {
     padding-top: 10px;
   }
+  .carousel img {
+    width: 720px;
+    max-width: 720px;
+    height: auto;
+  }
 }
 header {
   background-image: url('../img/header-containers-optimized.jpg');
