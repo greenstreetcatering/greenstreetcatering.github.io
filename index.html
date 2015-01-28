@@ -1678,7 +1678,13 @@ Z                   </div>
 function loadModal(location) {
     jQuery.get(location,function(data) {
         jQuery("#multiuseModal div.modal-body").empty().append(data);
-        jQuery("#multiuseModal div.modal-body div.carousel").carousel();
+        var $carousel = jQuery("#multiuseModal div.modal-body div.carousel").carousel();
+        jQuery('#multiuseModal div.modal-body div.carousel a[data-slide="prev"]').click(function() {
+            $carousel.carousel('prev');
+        });
+        jQuery('#multiuseModal div.modal-body div.carousel a[data-slide="next"]').click(function() {
+            $carousel.carousel('next');
+        });
         jQuery("#multiuseModal").modal('show');
     });
 }
