@@ -1679,6 +1679,7 @@ function loadModal(location) {
     jQuery.get(location,function(data) {
         jQuery("#multiuseModal div.modal-body").empty().append(data);
         jQuery("#multiuseModal").modal('show');
+        jQuery(".carousel").carousel();
     });
 }
 </script>
