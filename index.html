@@ -211,6 +211,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#" onclick="loadModal('mabel.html'); return false;">try</a>
                 <a href="#modalMabelFamilyDinner" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
@@ -1609,6 +1610,22 @@
         </div>
     </div>
 </div>
+
+<div class="multiuse-modal modal fade" id="multiuseModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <span class="btn btn-primary">close</span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+Z                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--     <div class="portfolio-modal modal fade" id="modalBradfordPark" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -1657,7 +1674,14 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/agency.js"></script>
-
+<script type="text/javascript">
+function loadModal(location) {
+    jQuery.get(location,function(data) {
+        jQuery("#multiuseModal .modal-body").html(data);
+        jQuery("#multiuseModal").modal('show');
+    });
+}
+</script>
 </body>
 
 </html>
