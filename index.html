@@ -505,7 +505,7 @@
             </div>
             <div class="col-lg-2"></div>
         </div>
-        <div class="row text-center">
+        <div id="sponsors" class="row text-center">
             <h3 class="section-heading">Please show your appreciation</h3>
             <h4 class="section-subheading text-muted">for our 2015 sponsors</h4>
             <div class="row"><div class="col-lg-12"></div></div>
@@ -714,9 +714,10 @@
 
 <div class="sponsorship-list hidden-sm hidden-xs">
     <ul class="unstyled">
-        <li class="badge">Premier Partners</li>
+        <li class="badge" onclick="closeSponsorship();">Premier Partners <span class="glyphicon glyphicon-remove"></span></li>
         <li><a target="_blank" href="http://foundation.walmart.com?ref=www.greenstreetcatering.org"><img class="img-responsive img-thumbnail" src="/img/logos/walmart-logo.jpg" /></a></li>
         <li><a target="_blank" href="https://www.foodlion.com/in-our-community/food-lion-feeds/?ref=www.greenstreetcatering.org"><img class="img-responsive img-thumbnail" src="img/logos/Foodlionlogo.png" /></a></li>
+        <!--<li class="badge"><a class="page-scroll" href="#sponsors">more..</a></li>-->
     </ul>
 </div>
 <!-- jQuery -->
@@ -749,6 +750,9 @@
             });
             jQuery("#multiuseModal").modal('show');
         });
+    }
+    function closeSponsorship() {
+        jQuery(".sponsorship-list").hide('slow');
     }
 </script>
 <script>

@@ -824,17 +824,22 @@ img.centered {
 }
 .sponsorship-list {
   position: fixed;
-  bottom: 0px;
+  bottom: 5px;
   left: 0px;
   padding: 10px 10px 10px 10px;
 }
 .sponsorship-list img {
   max-width: 100px;
 }
-ul.unstyled {
+.sponsorship-list ul.unstyled {
   padding: 0;
   list-style: none;
 }
-ul.unstyled li {
+.sponsorship-list ul.unstyled li {
   padding: 10px;
+}
+.sponsorship-list ul.unstyled li a,
+.sponsorship-list ul.unstyled li a:hover {
+  color: #ffffff !important;
+  text-decoration: none;
 }
